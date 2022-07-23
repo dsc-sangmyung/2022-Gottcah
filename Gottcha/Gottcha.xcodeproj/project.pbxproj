@@ -14,6 +14,7 @@
 		B76C0CB0286B41FE0088F729 /* GottchaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76C0CAF286B41FE0088F729 /* GottchaApp.swift */; };
 		B76C0CB4286B42020088F729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B76C0CB3286B42020088F729 /* Assets.xcassets */; };
 		B76C0CB7286B42020088F729 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B76C0CB6286B42020088F729 /* Preview Assets.xcassets */; };
+		B7A9C186288BD35B00472D10 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A9C185288BD35B00472D10 /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		B76C0CAF286B41FE0088F729 /* GottchaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GottchaApp.swift; sourceTree = "<group>"; };
 		B76C0CB3286B42020088F729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B76C0CB6286B42020088F729 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B7A9C185288BD35B00472D10 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 				B75A1EA42886ECE80096957A /* ContentView.swift */,
 				B75A1EAA2889A6500096957A /* GottchaView.swift */,
 				B75A1EAC2889A9830096957A /* ArchiveView.swift */,
+				B7A9C185288BD35B00472D10 /* ResultView.swift */,
 				B75A1EA62886F0570096957A /* BackgroundImageView.swift */,
 			);
 			path = Views;
@@ -175,6 +178,7 @@
 				B75A1EAD2889A9830096957A /* ArchiveView.swift in Sources */,
 				B75A1EA52886ECE80096957A /* ContentView.swift in Sources */,
 				B76C0CB0286B41FE0088F729 /* GottchaApp.swift in Sources */,
+				B7A9C186288BD35B00472D10 /* ResultView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
