@@ -23,36 +23,13 @@ struct GottchaView: View {
         
     }
 }
-//
-//struct GottchaButton: View {
-//    @State private var ResultView = false
-//
-//    var body: some View {
-//
-//        GeometryReader { metrics in
-//
-//            VStack(spacing: 0) {
-//                Spacer().frame(height: metrics.size.height * 0.85 - 100 / 2)
-//
-//                Button(action: { ResultView = true
-//                }) {
-//                    Image("Talk_Button_1")
-//                        .resizable()
-//                        .frame(width: 203, height: 147)
-//                }
-//
-//                NavigationLink("", destination: GottchaButton.ResultView
-//                               , isActive: $ResultView)
-//            }
-//        }
-//    }
-//}
 
 struct GottchaButton: View {
     @State private var ResultView = false
     
     var body: some View {
-        Button(action: { ResultView = true
+        Button(action: {
+            ResultView = true
         }) {
             ZStack {
                 Image("Talk_Button_1")
@@ -70,7 +47,6 @@ struct GottchaButton: View {
                        , isActive: $ResultView)
         .navigationBarTitle("")
         .navigationBarHidden(true)
-        
     }
     
 }

@@ -25,6 +25,16 @@ struct ContentView: View {
     }
 }
 
+struct BackgroundImageView: View {
+    var body: some View {
+            Image("Main_Background")
+                .resizable()
+                .edgesIgnoringSafeArea(.all)
+                .aspectRatio(contentMode: .fill)
+    }
+}
+
+
 struct MainButton: View {
     @State private var GottchaView = false
     @State private var ArchiveView = false

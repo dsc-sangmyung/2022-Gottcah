@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B71F4AD9288D89B800A0B51C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B71F4AD8288D89B800A0B51C /* GoogleService-Info.plist */; };
+		B71F4ADC288D8C1400A0B51C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B71F4ADB288D8C1400A0B51C /* FirebaseAnalytics */; };
+		B71F4ADE288D8C1400A0B51C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B71F4ADD288D8C1400A0B51C /* FirebaseStorage */; };
 		B75A1EA52886ECE80096957A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A1EA42886ECE80096957A /* ContentView.swift */; };
-		B75A1EA72886F0570096957A /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A1EA62886F0570096957A /* BackgroundImageView.swift */; };
 		B75A1EAB2889A6500096957A /* GottchaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A1EAA2889A6500096957A /* GottchaView.swift */; };
 		B75A1EAD2889A9830096957A /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A1EAC2889A9830096957A /* ArchiveView.swift */; };
 		B76C0CB0286B41FE0088F729 /* GottchaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76C0CAF286B41FE0088F729 /* GottchaApp.swift */; };
@@ -18,8 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B71F4AD8288D89B800A0B51C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B75A1EA42886ECE80096957A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B75A1EA62886F0570096957A /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
 		B75A1EAA2889A6500096957A /* GottchaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GottchaView.swift; sourceTree = "<group>"; };
 		B75A1EAC2889A9830096957A /* ArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveView.swift; sourceTree = "<group>"; };
 		B76C0CAC286B41FE0088F729 /* Gottcha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gottcha.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71F4ADC288D8C1400A0B51C /* FirebaseAnalytics in Frameworks */,
+				B71F4ADE288D8C1400A0B51C /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +51,6 @@
 				B75A1EAA2889A6500096957A /* GottchaView.swift */,
 				B75A1EAC2889A9830096957A /* ArchiveView.swift */,
 				B7A9C185288BD35B00472D10 /* ResultView.swift */,
-				B75A1EA62886F0570096957A /* BackgroundImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -69,6 +72,7 @@
 		B76C0CA3286B41FE0088F729 = {
 			isa = PBXGroup;
 			children = (
+				B71F4AD8288D89B800A0B51C /* GoogleService-Info.plist */,
 				B75A1EA32886E8770096957A /* Resources */,
 				B75A1EA22886E84F0096957A /* Model */,
 				B75A1EA12886E8380096957A /* Views */,
@@ -119,6 +123,10 @@
 			dependencies = (
 			);
 			name = Gottcha;
+			packageProductDependencies = (
+				B71F4ADB288D8C1400A0B51C /* FirebaseAnalytics */,
+				B71F4ADD288D8C1400A0B51C /* FirebaseStorage */,
+			);
 			productName = Gottcha;
 			productReference = B76C0CAC286B41FE0088F729 /* Gottcha.app */;
 			productType = "com.apple.product-type.application";
@@ -147,6 +155,10 @@
 				Base,
 			);
 			mainGroup = B76C0CA3286B41FE0088F729;
+			packageReferences = (
+				B71F4ADA288D8C1400A0B51C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B71F4ADF288E70C300A0B51C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = B76C0CAD286B41FE0088F729 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -163,6 +175,7 @@
 			files = (
 				B76C0CB7286B42020088F729 /* Preview Assets.xcassets in Resources */,
 				B76C0CB4286B42020088F729 /* Assets.xcassets in Resources */,
+				B71F4AD9288D89B800A0B51C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +186,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B75A1EA72886F0570096957A /* BackgroundImageView.swift in Sources */,
 				B75A1EAB2889A6500096957A /* GottchaView.swift in Sources */,
 				B75A1EAD2889A9830096957A /* ArchiveView.swift in Sources */,
 				B75A1EA52886ECE80096957A /* ContentView.swift in Sources */,
@@ -310,6 +322,7 @@
 				DEVELOPMENT_TEAM = 5227TZ45WY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "저장 기능을 사용하려면 '사진/비디오' 접근권한을 허용해야 합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +352,7 @@
 				DEVELOPMENT_TEAM = 5227TZ45WY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "저장 기능을 사용하려면 '사진/비디오' 접근권한을 허용해야 합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -379,6 +393,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B71F4ADA288D8C1400A0B51C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		B71F4ADF288E70C300A0B51C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B71F4ADB288D8C1400A0B51C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B71F4ADA288D8C1400A0B51C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		B71F4ADD288D8C1400A0B51C /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B71F4ADA288D8C1400A0B51C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B76C0CA4286B41FE0088F729 /* Project object */;
 }
