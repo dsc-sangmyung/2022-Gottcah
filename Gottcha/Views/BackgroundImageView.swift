@@ -14,7 +14,7 @@ struct BackgroundImageView: View {
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
                 .aspectRatio(contentMode: .fill)
-//        }
+        //        }
     }
 }
 

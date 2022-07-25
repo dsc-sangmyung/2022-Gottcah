@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ArchiveView: View {
     var body: some View {
-        Text("This is Archive")
+        Image("Archive_Background")
+            .resizable()
+            .edgesIgnoringSafeArea(.all)
+            .aspectRatio(contentMode: .fill)
     }
 }
 
