@@ -9,6 +9,7 @@ import SwiftUI
 import FirebaseStorage
 
 struct ResultView: View {
+    
     let randInt = Int.random(in: 0...11)
     
     var body: some View {
@@ -17,23 +18,16 @@ struct ResultView: View {
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
                 .aspectRatio(contentMode: .fill)
+            ResultButton()
             VStack {
                 Image(RandImages(rawValue: randInt)!.toString())
                     .resizable()
                     .aspectRatio(contentMode: .fill)
             }
-            .frame(width: 360, height: 360)
+            .frame(width: 360, height: 360, alignment: .center)
             .padding(.bottom, 200)
-            HStack {
-                ResultButton()
-                    .padding(.top, 280)
-
-                
-            }
         }
-        
     }
-    
 }
 
 
@@ -82,40 +76,49 @@ enum RandImages: Int {
 }
 
 struct ResultButton: View {
+    @State private var ContentView = false
+    
     var body: some View {
-        Button(action: {
-        }) {
-            HStack(spacing: 70) {
+        HStack(spacing: 70) {
+            Button(action: { }) {
                 ZStack {
                     Image("Talk_Button_1")
                         .resizable()
-                        .frame(width: 148, height: 107)
-                    
+                        .frame(width: 148, height: 107, alignment: .leading)
                     Text("저장" + "\n" + "하기")
                         .font(.title)
                         .foregroundColor(.white)
                         .fontWeight(.bold)
                         .font(.custom("NanumBarunGothicOTF", size: 28))
                 }
+            }
+            Button(action: { ContentView = true }) {
                 ZStack {
                     Image("Talk_Button_2")
                         .resizable()
-                        .frame(width: 148, height: 107)
-                    
-                    Text("공유" + "\n" + "하기")
+                        .frame(width: 148, height: 107, alignment: .leading)
+                    Text("처음" + "\n" + "으로")
                         .font(.title)
                         .foregroundColor(.white)
                         .fontWeight(.bold)
                         .font(.custom("NanumBarunGothicOTF", size: 28))
                 }
+                
+                NavigationLink("", destination: Gottcha.ContentView()
+                               , isActive: $ContentView)
+                .navigationBarTitle("")
+                .navigationBarHidden(true)
             }
+            
+            
         }
+        .padding(.top, 280)
     }
 }
-
 
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
         ResultView()
+        }
     }
 }
