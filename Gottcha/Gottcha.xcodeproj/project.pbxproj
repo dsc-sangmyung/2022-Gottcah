@@ -10,6 +10,7 @@
 		B71F4AD9288D89B800A0B51C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B71F4AD8288D89B800A0B51C /* GoogleService-Info.plist */; };
 		B71F4ADC288D8C1400A0B51C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B71F4ADB288D8C1400A0B51C /* FirebaseAnalytics */; };
 		B71F4ADE288D8C1400A0B51C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B71F4ADD288D8C1400A0B51C /* FirebaseStorage */; };
+		B71F4AE5288F08A300A0B51C /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71F4AE4288F08A300A0B51C /* ImageSaver.swift */; };
 		B75A1EA52886ECE80096957A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A1EA42886ECE80096957A /* ContentView.swift */; };
 		B75A1EAB2889A6500096957A /* GottchaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A1EAA2889A6500096957A /* GottchaView.swift */; };
 		B75A1EAD2889A9830096957A /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A1EAC2889A9830096957A /* ArchiveView.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		B71F4AD8288D89B800A0B51C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B71F4AE4288F08A300A0B51C /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageSaver.swift; path = Resources/ImageSaver.swift; sourceTree = SOURCE_ROOT; };
 		B75A1EA42886ECE80096957A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B75A1EAA2889A6500096957A /* GottchaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GottchaView.swift; sourceTree = "<group>"; };
 		B75A1EAC2889A9830096957A /* ArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		B75A1EA32886E8770096957A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B71F4AE4288F08A300A0B51C /* ImageSaver.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B75A1EAB2889A6500096957A /* GottchaView.swift in Sources */,
+				B71F4AE5288F08A300A0B51C /* ImageSaver.swift in Sources */,
 				B75A1EAD2889A9830096957A /* ArchiveView.swift in Sources */,
 				B75A1EA52886ECE80096957A /* ContentView.swift in Sources */,
 				B76C0CB0286B41FE0088F729 /* GottchaApp.swift in Sources */,
